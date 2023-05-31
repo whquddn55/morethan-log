@@ -20,7 +20,7 @@ const CONFIG = {
   blog: {
     title: "thuthi-log",
     description: "피곤한투티의 개발/일상 공유 블로그",
-    theme: "auto", // ['light', 'dark', 'auto']
+    theme: "light", // ['light', 'dark', 'auto']
   },
 
   // CONFIG configration (required)
