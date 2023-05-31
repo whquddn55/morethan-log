@@ -1,35 +1,39 @@
 const CONFIG = {
   // profile setting (required)
   profile: {
-    name: "morethanmin",
+    name: "thuthi",
     image: "/avatar.svg", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
-    role: "frontend developer",
-    bio: "I develop everything using node.",
-    email: "morethanmin.dev@gmail.com",
-    linkedin: "morethanmin",
-    github: "morethanmin",
+    role: "backend developer",
+    bio: "백엔드 개발자 피곤한투티(조병우) 입니다.",
+    email: "whquddn55@gmail.com",
+    linkedin: "",
+    github: "whquddn55",
     instagram: "",
   },
   projects: [
     {
-      name: `morethan-log`,
-      href: "https://github.com/morethanmin/morethan-log",
+      name: `Algorithm-repo`,
+      href: "https://github.com/whquddn55/Algorithm_BojSolves",
     },
   ],
   // blog setting (required)
   blog: {
-    title: "morethan-log",
-    description: "welcome to morethan-log!",
+    title: "thuthi-log",
+    description: "피곤한투티의 개발/일상 공유 블로그",
     theme: "auto", // ['light', 'dark', 'auto']
   },
 
   // CONFIG configration (required)
-  link: "https://morethan-log.vercel.app",
-  since: 2022, // If leave this empty, current year will be used.
-  lang: "en-US", // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES', 'ko-KR']
+  link: "https://thuthi.vercel.app",
+  since: 2023, // If leave this empty, current year will be used.
+  lang: "ko-KR", // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES', 'ko-KR']
   ogImageGenerateURL: "https://og-image-korean.vercel.app", // The link to generate OG image, don't end with a slash
   seo: {
-    keywords: ["Blog", "Website", "Notion"],
+    keywords: [
+      "Dev", "Spring", "Springboot", "Algorithm", "JPA",
+      "dev", "spring", "springboot", "algorithm", "jpa",
+      "개발", "스프링", "스프링부트", "알고리즘", "김영한", "조환규", "피곤한투티", "투티", "부산대", "부산대학교",
+      "ssafy", "싸피", "LG CNS", "CODE MONSTER", "코드몬스터", "코딩테스트", "코테", "ICPC", "SCPC", "UCPC", "코딩대회"],
   },
 
   // notion configuration (required)
@@ -53,7 +57,7 @@ const CONFIG = {
   utterances: {
     enable: true,
     config: {
-      repo: "morethanmin/morethan-log",
+      repo: "whquddn55/morethan-log",
       "issue-term": "og:title",
       label: "💬 Utterances",
     },
