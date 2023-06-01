@@ -55,6 +55,8 @@ export async function getPosts() {
       properties.fullWidth =
         (block[id].value?.format as any)?.page_full_width ?? false
 
+      processSlug(properties);
+
       data.push(properties)
     }
 
@@ -69,4 +71,19 @@ export async function getPosts() {
 
     return data as TPosts
   }
+}
+
+export function processSlug(properties: any) {
+  let slug: string = properties.slug;
+  if (!slug) {
+    slug = genSlug(properties.category, properties.title);
+  }
+
+  properties.slug = encodeURIComponent(slug);
+}
+
+function genSlug(category: [string], title: any): any {
+  let ret = category.reduce((prv, cur) => prv + "-" + cur);
+  ret += "-" + title;
+  return ret;
 }

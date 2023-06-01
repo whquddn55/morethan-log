@@ -23,6 +23,7 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params: { slug } }: any) {
   try {
     //includePages: true
+    slug = encodeURIComponent(slug);
     const posts = await getPosts()
     const post = posts.find((t) => t.slug === slug)
     const blockMap = await getPostBlocks(post?.id!)
