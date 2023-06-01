@@ -18,7 +18,7 @@ const CONFIG = {
   ],
   // blog setting (required)
   blog: {
-    title: "thuthi-log",
+    title: "thuthi-log: 피곤한투티의 개발과 일상",
     description: "피곤한투티의 개발/일상 공유 블로그",
     theme: "light", // ['light', 'dark', 'auto']
   },
